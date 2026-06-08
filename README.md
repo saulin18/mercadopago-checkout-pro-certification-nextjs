@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Checkout Pro certification
 
-## Getting Started
+Simple project to obtain the Mercado Pago Checkout Pro certification.
 
-First, run the development server:
+For more information, visit the [Checkout Pro certification page](https://www.mercadopago.com.ar/partners/developers/certifications/checkout-pro).
+
+This is a **Next.js 16** project. Dependencies are managed with [pnpm](https://pnpm.io/).
+
+## Instructions to run the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cd mpcert
+pnpm i
+pnpm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Use `pnpm run build` to build the app for production.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env` file with:
 
-## Learn More
+```env
+MERCADOPAGO_ACCESS_TOKEN=
+NEXT_PUBLIC_MERCADOPAGO_PUBLIC_KEY=
+NEXT_PUBLIC_APP_URL=
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Documentation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Check the Mercado Pago documentation to get started with Checkout Pro if you are not familiar with the workflow yet: [Checkout Pro overview](https://www.mercadopago.com.ar/developers/es/docs/checkout-pro/overview).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+I highly recommend [this repo](https://github.com/goncy/next-mercadopago) by [Goncy](https://github.com/goncy).

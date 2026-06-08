@@ -2,9 +2,7 @@ import CheckoutButton from "@/components/CheckoutButton";
 import { createPreference } from "./actions/mercadopago";
 
 export default async function Home() {
-  const preference = await createPreference([
-    { id: "1", title: "Item de prueba", unit_price: 100, quantity: 1 },
-  ]);
+  const preference = await createPreference();
 
   if (!preference.id) {
     return <div>Error al crear la preferencia</div>;
